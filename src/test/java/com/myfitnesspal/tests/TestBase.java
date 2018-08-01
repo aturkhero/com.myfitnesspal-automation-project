@@ -80,7 +80,7 @@ public abstract class TestBase {
 		Driver.closeDriver();
 	}
 
-	@AfterTest
+	//@AfterTest
 	public void tearDownTest() {
 		// everytime it is cleaning the reports (.flush() )
 		report.flush();

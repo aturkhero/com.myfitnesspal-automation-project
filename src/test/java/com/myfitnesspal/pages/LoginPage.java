@@ -15,16 +15,17 @@ public class LoginPage {
 	@FindBy(xpath = "//li/a[.='Log In']")
 	public WebElement logIn;
 	
-	@FindBy(id = "username")
+	@FindBy(name = "username")
 	public WebElement userName;
 
-	@FindBy(id = "password")
+	@FindBy(name = "password")
 	public WebElement password;
 
-	@FindBy(xpath = "//li[@class='submit']")
+	@FindBy(xpath = "//input[@class='expand-width']")
 	public WebElement loginButton;
 
-
+	@FindBy(xpath = "//*[.='Log Out']")
+	public WebElement logout;
 
 	public void login(String uid, String pwd) {
 		userName.sendKeys(uid);
