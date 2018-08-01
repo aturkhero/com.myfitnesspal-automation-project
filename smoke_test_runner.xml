@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- if we want more details to be written on the console we can increase 
+	the verbose=5 -->
+<suite name="Smoke tests" verbose="2">
+
+	<test name="Login smoke tests">
+		<packages>
+			<package name="com.cbt.tests.order">
+
+			</package>
+		</packages>
+	</test>
+
+	<test name="Order smoke tests">
+		<packages>
+			<package name="com.cbt.tests.order">
+
+			</package>
+		</packages>
+	</test>
+
+</suite>
