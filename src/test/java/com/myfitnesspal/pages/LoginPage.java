@@ -11,9 +11,10 @@ public class LoginPage {
 	public LoginPage() {
 		PageFactory.initElements(Driver.getDriver(), this);	
 	}
-
-	@FindBy(xpath = "//li/a[.='Log In']")
-	public WebElement logIn;
+	
+	
+	@FindBy(partialLinkText="Log In")
+	public WebElement logIn; 
 	
 	@FindBy(name = "username")
 	public WebElement userName;
@@ -24,7 +25,7 @@ public class LoginPage {
 	@FindBy(xpath = "//input[@class='expand-width']")
 	public WebElement loginButton;
 
-	@FindBy(xpath = "//*[.='Log Out']")
+	@FindBy(partialLinkText = "Log Out")
 	public WebElement logout;
 
 	public void login(String uid, String pwd) {
